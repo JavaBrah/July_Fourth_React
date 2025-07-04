@@ -1,11 +1,12 @@
 import { useState } from 'react'
-
+import Home from './pages/Home'
 
 function App() {
 
 
   return (
     <>
+    <Home />
       <div class="bg-amber-50 dark:bg-gray-600 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
   <div>
     <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
