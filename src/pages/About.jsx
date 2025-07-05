@@ -1,5 +1,9 @@
+import Header from "../components/Header";
 export default function About() {
     return (
-        <h1>About the show</h1>
+        <>
+            <Header />
+            <h1>About the show</h1>
+        </>
     );
 };
