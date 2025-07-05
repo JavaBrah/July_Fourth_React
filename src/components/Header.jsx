@@ -1,9 +1,9 @@
 import NavBar from "./NavBar";
 export default function Header() {
     return (
-        <div class="">
+        <div >
      
-            <h1>Happy 4th Of July</h1>
+            <h1 className="justify-center" >Happy 4th Of July</h1>
             <NavBar />
         </div>
     );

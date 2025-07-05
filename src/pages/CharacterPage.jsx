@@ -35,7 +35,7 @@ export default function CharacterPage() {
     return (
         <>
         <Header />
-        <form class="bg-amber-50" onSubmit={handleSubmit}>
+        <form class="bg-amber-50 max-w-screen: 30vw" onSubmit={handleSubmit}>
             <input 
             type="text" 
             name="userSearch" 
@@ -44,11 +44,11 @@ export default function CharacterPage() {
             onChange={(e) => setUserSearch(e.target.value)}/>
             <button class="bg bg-red-900"type="Submit">Search Character</button>
         </form>
-        <div>
+        <div className="inline-flex flex-wrap justify-center ">
           { searchData.length > 0 && searchData.map((data, index) => (
-            <div key={index}>
+            <div className="bg-neutral-600 border-2 border-blue-950 gap-2" key={index}>
                 
-                <CharacterCard key={index} data={data}/>
+                <CharacterCard  key={index} data={data}/>
             </div>
             ))}
         <div>
