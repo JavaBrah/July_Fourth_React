@@ -1,5 +1,18 @@
+import Header from '../components/Header';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+
 export default function Home() {
     return (
-        <h1>Home of R&M</h1>
+        <>
+        <header><Header>
+            <NavBar></NavBar>
+            </Header>
+        </header>
+        <footer>
+            <Footer></Footer>
+        </footer>
+
+        </>
     );
 };
