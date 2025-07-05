@@ -14,6 +14,10 @@ export default function NavBar(params) {
 
                         <li><Link to="/CharacterPage" className="hover:text-pink-600">
                         Characters</Link></li>
+
+                        <li><Link to="/Locations" className="hover:text-pink-600">
+                        Locations</Link></li>
+
                     </ul>
                 </div>
             </nav>

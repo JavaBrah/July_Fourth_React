@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import CharacterCard from "./CharacterCard";
+import CharacterCard from "../components/CharacterCard";
 
 
 export default function CharacterPage() {
@@ -35,14 +35,14 @@ export default function CharacterPage() {
     return (
         <>
         <Header />
-        <form class="bg-amber-50 max-w-screen: 30vw" onSubmit={handleSubmit}>
+        <form className="bg-amber-50 max-w-screen: 30vw" onSubmit={handleSubmit}>
             <input 
             type="text" 
             name="userSearch" 
             id="characterSearch" 
             value={userSearch}
             onChange={(e) => setUserSearch(e.target.value)}/>
-            <button class="bg bg-red-900"type="Submit">Search Character</button>
+            <button className="bg bg-red-900"type="Submit">Search Character</button>
         </form>
         <div className="inline-flex flex-wrap justify-center ">
           { searchData.length > 0 && searchData.map((data, index) => (
