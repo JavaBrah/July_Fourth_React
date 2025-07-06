@@ -10,7 +10,7 @@ import Locations from './pages/Locations.jsx'
 import './index.css'
 import App from './App.jsx'
 import LocationDetails from './pages/LocationDetails.jsx'
-import CharacterDetailCard from './pages/CharacterDetailCard.jsx'
+import CharacterDetails from './pages/CharacterDetails.jsx'
 
 
 const router = createBrowserRouter([{
@@ -30,7 +30,7 @@ const router = createBrowserRouter([{
   },
   {
     path: '/CharacterPage/:id',
-    element: <CharacterDetailCard />,
+    element: <CharacterDetails />,
     errorElement: <FileNotFound />
   },
   {

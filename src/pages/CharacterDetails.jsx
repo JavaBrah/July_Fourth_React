@@ -32,7 +32,7 @@ export default function CharacterDetails() {
             <Header/>
             <div>
                 {character && 
-                <CharacterDetailCard key={character.id} charData={character}/>
+                <CharacterDetailCard key={id} charData={character}/>
                 }
 
                 <Link to={-1}
