@@ -1,3 +1,7 @@
+
+// Build dynamic routes so 
+// User can see characters from selected Location
+
 import Header from "../components/Header";
 import LocationCard from "../components/LocationCard";
 import { useEffect, useState } from "react";

@@ -1,13 +1,15 @@
-export default function CharacterCard({data}) {
+import { Link } from "react-router-dom"
+
+export default function CharacterCard({charData}) {
     return(
+        <Link to={`/CharacterPage/${charData.id}`}>
         <div>
-            <img src={data.image} alt={data.name} />
+            <img src={charData.image} alt={charData.name} />
             <ul>
-                <li>Name: {data.name}</li>
-                <li>Status: {data.status}</li>
-                <li>Type: {data.type}</li>
+                <li>Name: {charData.name}</li>
             </ul>
         </div>
+        </Link>
     );
     
 };

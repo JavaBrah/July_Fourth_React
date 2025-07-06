@@ -47,8 +47,7 @@ export default function CharacterPage() {
         <div className="inline-flex flex-wrap justify-center ">
           { searchData.length > 0 && searchData.map((data, index) => (
             <div className="bg-neutral-600 border-2 border-blue-950 gap-2" key={index}>
-                
-                <CharacterCard  key={index} data={data}/>
+                {data && <CharacterCard  key={index} charData={data}/>}
             </div>
             ))}
         <div>
