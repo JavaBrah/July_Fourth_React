@@ -1,9 +1,9 @@
 import NavBar from "./NavBar";
 export default function Header() {
     return (
-        <div >
-     
-            <h1 className="justify-center" >Happy 4th Of July</h1>
+        <div className=" bg-gray-700 flex-col justify-center" >
+            <h1 className="flex justify-center  bg-green-600 p-4 rounded-xl shadow-md max-w-xs mx-auto m-2" >
+                Rick & Morty Assignment</h1>
             <NavBar />
         </div>
     );

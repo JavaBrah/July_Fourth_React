@@ -33,7 +33,8 @@ export default function Locations() {
 
        
     return (
-        <>
+        <>  
+        <div className="bg-gray-700">
             <Header></Header>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
                 {locationData.length > 0 && locationData.map((data, index) => (
@@ -44,6 +45,8 @@ export default function Locations() {
             ))}
             </div>
             {!validResponse && <p className="text-center text-red-500 mt-4">No locations found</p>}
+
+        </div>
         </>
 
     );

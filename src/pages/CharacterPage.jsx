@@ -35,6 +35,8 @@ export default function CharacterPage() {
     return (
         <>
         <Header />
+        <div className="bg-gray-700">
+
         <form className="bg-amber-50 max-w-screen: 30vw" onSubmit={handleSubmit}>
             <input 
             type="text" 
@@ -55,6 +57,7 @@ export default function CharacterPage() {
         </div>
         </div>
         <Footer />
+        </div>
 
         </>
     );

@@ -3,6 +3,7 @@ import {useState, useEffect} from "react";
 import axios from "axios";
 import Header from "../components/Header";
 import CharacterCard from "../components/CharacterCard";
+import Footer from "../components/Footer";
 
 import { Link } from "react-router-dom";
 
@@ -47,7 +48,9 @@ export default function LocationDetails() {
    
     return(
         <>
+
             <Header />
+
             <div>
                 <h1 className="text-3xl font-bold mb-1">{location.name}</h1>
                 <p className="text-gray-600 mb-6">
@@ -55,9 +58,9 @@ export default function LocationDetails() {
             </div>
             <div>
                 {characters.length === 0 ? (
-                <p className="italic text-center">No known residents</p>
+                    <p className="italic text-center">No known residents</p>
                 ) : (
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {characters.map((char) => (
                     <CharacterCard key={char.id} charData={char} />
                 ))}
@@ -67,6 +70,9 @@ export default function LocationDetails() {
             <div className="flex justify-center items-center gap-4 ">
                 <Link className="hover: text-cyan-700"to='/Locations'>Back to Locations</Link>
             </div>
+            <footer>
+                <Footer></Footer>
+            </footer>
             
         </>
             
