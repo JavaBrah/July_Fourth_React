@@ -59,7 +59,7 @@ export default function LocationDetails() {
                 ) : (
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {characters.map((char) => (
-                    <CharacterCard key={char.id} data={char} />
+                    <CharacterCard key={char.id} charData={char} />
                 ))}
                 </div>
                 )}

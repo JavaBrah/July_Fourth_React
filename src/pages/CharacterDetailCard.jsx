@@ -3,7 +3,6 @@ export default function CharacterDetailCard({charData}) {
     
     return(
         <>
-           
             <div>
                     <img src={charData.image} alt={charData.name} />
                 <ul>
