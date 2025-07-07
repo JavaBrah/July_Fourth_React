@@ -10,7 +10,9 @@ export default function Home() {
             <NavBar></NavBar>
             </Header>
         </header>
-        <main className='flex-grow'></main>
+        <main className='flex-grow'>
+            
+        </main>
         <footer>
             <Footer></Footer>
         </footer>
