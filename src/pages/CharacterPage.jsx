@@ -35,7 +35,7 @@ export default function CharacterPage() {
     return (
         <>
         <Header />
-        <div className="bg-gray-700">
+        <div className="">
 
         <form className="bg-amber-50 max-w-screen: 30vw" onSubmit={handleSubmit}>
             <input 
@@ -48,7 +48,7 @@ export default function CharacterPage() {
         </form>
         <div className="inline-flex flex-wrap justify-center ">
           { searchData.length > 0 && searchData.map((data, index) => (
-            <div className="bg-neutral-600 border-2 border-blue-950 gap-2" key={index}>
+            <div className="" key={index}>
                 {data && <CharacterCard  key={index} charData={data}/>}
             </div>
             ))}
