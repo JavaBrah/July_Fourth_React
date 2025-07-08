@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 export default function Footer() {
     return (
         <div className="flex justify-center">
-            Hope you Enjoyed
+            <p>Hope You Enjoyed!</p>
         </div>
     );
 };

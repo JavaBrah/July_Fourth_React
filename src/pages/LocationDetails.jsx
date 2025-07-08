@@ -71,6 +71,7 @@ export default function LocationDetails() {
                 <Link className="hover: text-cyan-700"to='/Locations'>Back to Locations</Link>
             </div>
             <footer>
+                {/* { refactor } */}
                 <Footer></Footer>
             </footer>
             
