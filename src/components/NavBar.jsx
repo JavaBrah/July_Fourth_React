@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-export default function NavBar(params) {
+export default function NavBar() {
     return(
         <div >
             <nav className="bg-gray-800 p-4 flex justify-center gap-4 shadow-md">
@@ -17,6 +17,9 @@ export default function NavBar(params) {
 
                         <li><Link to="/Locations" className="text-white bg-green-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-all duration-300">
                         Locations</Link></li>
+
+                        <li><Link to="/Episodes"  className="text-white bg-green-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-all duration-300">
+                        Episodes</Link></li>
 
                     </ul>
                 </div>

@@ -11,6 +11,7 @@ import './index.css'
 import App from './App.jsx'
 import LocationDetails from './pages/LocationDetails.jsx'
 import CharacterDetails from './pages/CharacterDetails.jsx'
+import Episodes from './pages/Episodes.jsx'
 
 
 const router = createBrowserRouter([{
@@ -43,6 +44,11 @@ const router = createBrowserRouter([{
     element: <LocationDetails />,
     errorElement: <FileNotFound />
   },
+  {
+    path: '/Episodes',
+    element: <Episodes />,
+    errorElement: <FileNotFound />
+  }
 ]);
 
 
